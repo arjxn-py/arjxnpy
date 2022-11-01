@@ -114,16 +114,16 @@ import "./App.css"
               <p className="separator" />
             </div>
             <div className="desc full">
-              <h4 className="subtitle">My name is Yago.</h4>
+              <h4 className="subtitle">My name is Arjun.</h4>
               <p>
-                I am a web developer and UX designer based in the beautiful west coast of Spain,
-                Galicia.
+                I am a Second year student at Cluster Innovation Centre, University of Delhi, pursuing my major in Information Technology & Mathematical Innovations & Management as minor.
+              </p>
+              <p>
+                Besides focusing on my academic skills and formal commitments, you can always find me working on developing my tech-stack and currently I am exploring MERN stack as I am commited to some projects related to Web Development. And along with that I implement my small ideas in the form of code, develop and maintain open-source projects, which I believe are the key to collaborative tech-dev.
               </p>
               <p>
                 I really enjoy solving problems as well as making things pretty and easy to use. I
-                can't stop learning new things; the more, the better. I also love photography, a hobby
-                I'm taking along since the good old film cameras. Oh, and rice with milk; I have a
-                passion for rice with milk!
+                can't stop learning new things; the more, the better.
               </p>
             </div>
             <div className="title">
@@ -134,15 +134,15 @@ import "./App.css"
               <h4 className="subtitle">I'm a programmer.</h4>
               <p>
                 For the front-end I usually work with Javascript, either standalone or including
-                popular frameworks like ReactJS and VueJS. I also make the web pretty by using Sass,
-                CSS and, whenever needed, any of their friends: Bootstrap, Bulma, etc.
+                popular frameworks like ReactJS and NextJS. I also make the web pretty by using Sass,
+                CSS whenever needed, any of their friends: Bootstrap, Bulma, etc.
               </p>
               <p>
                 For the back-end I also work with Javascript (NodeJS, Express, MongoDB, etc). But, of
                 course, whenever the project requires PHP, I do PHP as well (Wordpress, Laravel, etc).
               </p>
             </div>
-            <div className="desc">
+            {/* <div className="desc">
               <h4 className="subtitle">Also a designer.</h4>
               <p>
                 I feel comfortable working with many Adobe products. Photoshop, Illustrator, InDesign,
@@ -154,7 +154,7 @@ import "./App.css"
                 User interfaces, brochures, books, branding... You name it! As I mentioned, creating
                 pretty things is particularly important for me.
               </p>
-            </div>
+            </div> */}
           </article>
         </div>
       </section>
@@ -405,7 +405,7 @@ import "./App.css"
               tech="js vue sass"
               link="https://codepen.io/yagoestevez/full/xjwVPq/"
             >
-              {/* repo="https://github.com/yagoestevez/TicTacToe"> */}
+              repo="https://github.com/yagoestevez/TicTacToe">
               <small>Built using VueJS, Axios and Scss.</small>
               <p>
                 Simple Twitch clone using the new Twitch Helix API and made for the legacy front-end
