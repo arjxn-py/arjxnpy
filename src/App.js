@@ -138,8 +138,7 @@ import "./App.css"
                 CSS whenever needed, any of their friends: Bootstrap, Bulma, etc.
               </p>
               <p>
-                For the back-end I also work with Javascript (NodeJS, Express, MongoDB, etc). But, of
-                course, whenever the project requires PHP, I do PHP as well (Wordpress, Laravel, etc).
+                For the back-end I also work with Javascript (NodeJS, Express, MongoDB, etc). But, along with that I am also experienced with AWS and serverless & also use it when feasible.
               </p>
             </div>
             {/* <div className="desc">
@@ -233,235 +232,53 @@ import "./App.css"
           </div>
           <div className="projects-wrapper">
             <Project
-              title="Anonymous Message Board."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/AnonMsgBoard.jpg'}
-              tech="js css react node"
-              link="https://yagoestevez-anon-msg-board.glitch.me/"
-              repo="https://github.com/yagoestevez/anonymous-message-board"
+              title="Curio"
+              img={'https://raw.githubusercontent.com/arjxn-py/curio-front/main/src/components/assets/images/language.png?token=GHSAT0AAAAAABWKNKRNGGO5I7A7LDAOAFKUY3BCDYQ'}
+              tech="nodejs css react aws"
+              link="https://curiocic.netlify.app/"
+              repo="https://github.com/arjxn-py/curio-front"
             >
               <small>
-                Built using Node, Express, MongoDB, CSS + Bulma, React.js and React Router.
+                Built using Node , AWS + Lambda + Serverless, CSS , React.js + React Router + Axios .
               </small>
               <p>
-                This is a full-stack website that I made which lets the users read and post anonymous
-                messages and replies.
+                This is a full-stack website that I made which lets the users to translate & watch translated youtube videos.
               </p>
             </Project>
             <Project
-              title="Stock Price Checker."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/StockPriceChecker.jpg'}
+              title="SportsKart"
+              img={'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sport_balls.svg/1200px-Sport_balls.svg.png'}
               tech="js node css"
               link="https://yagoestevez-stock-price-checker.glitch.me/"
-              repo="https://github.com/yagoestevez/fcc-stock-price-checker"
+              repo="https://github.com/arjxn-py/SportsKart"
             >
               <small>
-                Built using Node, Express, MongoDB, JS + jQuery + Axios, CSS + Bootstrap and Pug.
+                Building using Node, ReactJS , Express, MongoDB, JS + jQuery + Axios +  JWT, CSS & Bootstrap
               </small>
               <p>
-                Another full-stack website to check the current value of any requested stock in the
-                market.
+                A full-stack e-commerce website to buy , sell or rent Sports Items.
               </p>
             </Project>
             <Project
-              title="Personal Library."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/PersonalLibrary.jpg'}
-              tech="js node css"
-              link="https://yagoestevez-personal-library.glitch.me/"
-              repo="https://github.com/yagoestevez/fcc-personal-library"
-            >
-              <small>Built using Node, Express, MongoDB, JS + jQuery, CSS + Bootstrap and Pug.</small>
-              <p>
-                A full-stack website to store book titles and comments to each book into a remote
-                database.
-              </p>
-            </Project>
-            <Project
-              title="Issue Tracker."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/IssueTracker.jpg'}
-              tech="js node css"
-              link="https://yagoestevez-issue-tracker.glitch.me/"
-              repo="https://github.com/yagoestevez/fcc-issue-tracker"
-            >
-              <small>Built using Node, Express, MongoDB, JS + jQuery, CSS + Bootstrap and Pug.</small>
-              <p>Yet another full-stack app to save and manage technical issues to be fixed.</p>
-            </Project>
-            <Project
-              title="Metric-Imperial Converter."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/MetricImperialConverter.jpg'}
-              tech="js node css"
-              link="https://yagoestevez-metric-imperial-converter.glitch.me/"
-              repo="https://github.com/yagoestevez/fcc-metric-imperial-converter/"
-            >
-              <small>Built using Node, Express, JS + jQuery, CSS + Bootstrap and Pug.</small>
-              <p>
-                Another full-stack for converting values from the Internation System of Units (Metric)
-                into the imperial units.
-              </p>
-            </Project>
-            <Project
-              title="URL Shortener Microservice."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/Cortala.jpg'}
-              tech="js node css"
-              link="https://cortala.glitch.me/example"
-              repo="https://github.com/yagoestevez/cortala"
-            >
-              <small>Built using Node, Express, CSS + Bootstrap and Pug.</small>
-              <p>
-                A microservice which takes a raw URL and makes it a short link to make it easy to sent
-                it through the Internet.
-              </p>
-            </Project>
-            <Project
-              title="Exercise Tracker."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/ExerciseTracker.jpg'}
-              tech="js vue node css"
-              link="https://yagoestevez-exercise-tracker.glitch.me"
-              repo="https://github.com/yagoestevez/exercise-tracker"
-            >
-              <small>Built using Node, Express, VueJS + Vue Router and CSS + Bootstrap.</small>
-              <p>
-                A service which lets the users save their daily exercise (or anything) into a log for
-                them to check it later.
-              </p>
-            </Project>
-            <Project
-              title="Bar Chart."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/BarChart.jpg'}
-              tech="js d3 css"
-              link="https://codepen.io/yagoestevez/full/wxjmrB/"
-              repo="https://github.com/yagoestevez/fcc-barchart"
-            >
-              <small>Built using CSS, JS and D3.js.</small>
-              <p>A bar chart representing the evolution of the US GDP.</p>
-            </Project>
-            <Project
-              title="Treemap Diagram."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/TreemapDiagram.jpg'}
-              tech="js d3 css"
-              link="https://codepen.io/yagoestevez/full/bjZygz/"
-              repo="https://github.com/yagoestevez/fcc-treemap-diagram"
-            >
-              <small>Built using CSS, JS and D3.js.</small>
-              <p>
-                A treemap diagram representing groups of pledges and sales from a particular category.
-              </p>
-            </Project>
-            <Project
-              title="Choropleth Map."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/ChoroplethMap.jpg'}
-              tech="js d3 css"
-              link="https://codepen.io/yagoestevez/full/NBeaWK/"
-              repo="https://github.com/yagoestevez/fcc-choropleth-map"
-            >
-              <small>Built using CSS, JS and D3.js.</small>
-              <p>A choropleth map representing the educational attainment by county in the U.S.</p>
-            </Project>
-            <Project
-              title="Random Quoting Machine."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/QuotingMachine.jpg'}
-              tech="js vue css"
-              link="https://codepen.io/yagoestevez/full/bxgEyd/"
-              repo="https://github.com/yagoestevez/random-quoting-machine"
-            >
-              <small>Built using VueJS, Axios and CSS + Bootstrap.</small>
-              <p>A random quoting app which retrieves pictures and quotes from two different APIs.</p>
-            </Project>
-            <Project
-              title="Calculator."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/Calculator.jpg'}
+              title="Dhamni"
+              img={'https://raw.githubusercontent.com/arjxn-py/Dhamni/main/images/image1.jpg'}
               tech="js react css"
-              link="https://codepen.io/yagoestevez/full/ERVONM/"
-              repo="https://github.com/yagoestevez/the-calcoolator"
-            >
-              <small>Built using React and CSS.</small>
-              <p>A project on which I built a virtual calculator with its usual features.</p>
-            </Project>
-            <Project
-              title="Pomodoro Timer."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/TomateTimer.jpg'}
-              tech="js react css"
-              link="https://codepen.io/yagoestevez/full/dqJGVa"
-              repo="https://github.com/yagoestevez/tomate-time"
-            >
-              <small>Built using React, CSS and lots of SVG.</small>
-              <p>A cute and animated Pomodoro clock to help the users improve their productivity.</p>
-            </Project>
-            <Project
-              title="TicTacToe Game."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/TicTacToe.jpg'}
-              tech="js react css"
-              link="https://codepen.io/yagoestevez/full/KRevzB/"
-              repo="https://github.com/yagoestevez/TicTacToe"
-            >
-              <small>Built using React, CSS and SVG.</small>
-              <p>
-                A TicTacToe game with a basic AI algorithm made for the legacy front-end projects on
-                FreeCodeCamp.
-              </p>
-            </Project>
-            <Project
-              title="Twitch Clone."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/Twitch.jpg'}
-              tech="js vue sass"
-              link="https://codepen.io/yagoestevez/full/xjwVPq/"
-            >
-              repo="https://github.com/yagoestevez/TicTacToe">
-              <small>Built using VueJS, Axios and Scss.</small>
-              <p>
-                Simple Twitch clone using the new Twitch Helix API and made for the legacy front-end
-                projects on FreeCodeCamp.
-              </p>
-            </Project>
-            <Project
-              title="Weather App."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/WeatherApp.jpg'}
-              tech="js vue css"
-              link="https://codepen.io/yagoestevez/full/zWbGmZ/"
-            >
-              {/* repo="https://github.com/yagoestevez/TicTacToe"> */}
-              <small>Built using VueJS, Axios and CSS.</small>
-              <p>App that present the users with the current local weather for their location.</p>
-            </Project>
-            <Project
-              title="Tribute."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/Tribute.jpg'}
-              tech="js sass"
-              link="https://codepen.io/yagoestevez/full/aaaOxL/"
-              repo="https://github.com/yagoestevez/tribute-to-aaron-swartz"
-            >
-              <small>Built using vanilla Javascript and Scss.</small>
-              <p>
-                Tribute page to Aaron Swartz, a static website built with SCSS and plain Javascript.
-              </p>
-            </Project>
-            <Project
-              title="Survey Form."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/SurveyForm.jpg'}
-              tech="js sass"
-              link="https://codepen.io/yagoestevez/full/bjVgjX/"
-              repo="https://github.com/yagoestevez/membership-form"
-            >
-              <small>Built using vanilla Javascript and Scss.</small>
-              <p>An animated survey form.</p>
-            </Project>
-            <Project
-              title="Landing Page Example."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/LandingPage.jpg'}
-              tech="js sass"
-              link="https://codepen.io/yagoestevez/full/pOBLeK/"
-              repo="https://github.com/yagoestevez/tomate-timer-landing-page"
-            >
-              <small>Built using vanilla Javascript and Scss.</small>
-              <p>A landing page for the Pomodoro Timer I made (shown previously in this section).</p>
-            </Project>
-            <Project
-              title="Technical Documentation Page."
-              img={'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/Documentify.jpg'}
-              tech="js react css"
-              link="https://codepen.io/yagoestevez/full/QxOLKX/"
+              link="#"
               repo="https://github.com/yagoestevez/documentify"
             >
-              <small>Built using React and CSS.</small>
+              <small>Built using HTML5/CSS3/JS.</small>
+              <p>
+                A website to create Blood Bank Chain for Blood Donors & Recievers.
+              </p>
+            </Project>
+            <Project
+              title="Image Retriever and Object Remover"
+              img={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiA_p6FJ2ko1VfKzG4fl-LspKPRiWujCsuIA&usqp=CAU'}
+              tech="js react css"
+              link="#"
+              repo="https://github.com/arjxn-py/Image-Retriever-and-Object-Remover-In-MATLAB"
+            >
+              <small>Built using MATLAB & C.</small>
               <p>
                 A technical documentation page made for a little React library I published on NPM.
               </p>
@@ -492,11 +309,11 @@ import "./App.css"
               <p className="subtitle">
                 Please, use the form below or send an email to {''}
                 <span className="mail">
-                  web
+                  arjxn.py
                   <i className="fas fa-at at" />
-                  yagoestevez
+                  @gmail
                   <i className="fas fa-circle dot" />
-                  com
+                  .com
                 </span>
                 :
               </p>
@@ -525,7 +342,7 @@ import "./App.css"
       <footer>
         <div className="wrapper">
           <h3>THANKS FOR VISITING</h3>
-          <p>© {new Date().getFullYear()} Yago Estévez.</p>
+          <p>© {new Date().getFullYear()} Arjun Verma</p>
           <SocialLinks />
         </div>
       </footer>
@@ -597,7 +414,7 @@ import "./App.css"
   
     render() {
       return (
-        <React.Fragment>
+        <>
           <Menu toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
           <Nav toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
           <Header />
@@ -605,7 +422,7 @@ import "./App.css"
           <Projects />
           <Contact />
           <Footer />
-        </React.Fragment>
+        </>
       );
     }
   
@@ -650,6 +467,6 @@ import "./App.css"
   }
   
   
-//   ReactDOM.render(<App />, document.getElementById('app'));
+  // ReactDOM.render(<App />, document.getElementById('app'));
 
   export default App;
