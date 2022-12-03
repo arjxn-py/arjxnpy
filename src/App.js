@@ -249,7 +249,7 @@ import "./App.css"
               title="SportsKart"
               img={'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sport_balls.svg/1200px-Sport_balls.svg.png'}
               tech="js node css"
-              link="https://yagoestevez-stock-price-checker.glitch.me/"
+              link="https://sports-kart.netlify.app/"
               repo="https://github.com/arjxn-py/SportsKart"
             >
               <small>
