@@ -9,9 +9,10 @@ export default function Home() {
       <section className="space-y-4 py-4">
         <p className="font-light text-muted-foreground">Welcome to /arjxn-py</p>
         <p className="font-light">
-          I'm a motivated full-stack developer, continuously exploring and
-          learning cutting-edge technologies, with a focus on delivering
-          performant applications.
+          I am a junior undergrad at the University of Delhi in New Delhi,
+          India, pursuing my Bachelors of Technology degree with a major in
+          Information Technology and Mathematical Innovations with a minor in
+          Management.
         </p>
         <p className="font-light">
           My main tech stack for building apps is{" "}
