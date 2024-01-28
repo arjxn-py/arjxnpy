@@ -40,6 +40,11 @@ export default function Navbar() {
                 Dashboard
               </Link>
             </li>
+            <li className="hover:underline">
+              <Link href="/experience" onClick={handleClick}>
+                Experience
+              </Link>
+            </li>
           </ul>
           <ModeToggle />
         </div>
