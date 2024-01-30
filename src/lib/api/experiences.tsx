@@ -2,11 +2,10 @@ import { Experience } from "@/types";
 
 const experiences: Experience[] = [
   {
-    title: "Google Summer of Code Developer",
+    role: "Google Summer of Code Developer",
     organization: "PyBaMM (Python Battery Mathematical Modeling), NumFOCUS",
     startDate: "May 2023",
     endDate: "September 2023",
-    role: "Remote",
     location: "Remote",
     responsibilities: [
       "Migrate test suite from Tox to Nox & Simplify PyBaMM’s Installation",
@@ -15,11 +14,10 @@ const experiences: Experience[] = [
     ],
   },
   {
-    title: "Junior Developer",
+    role: "Junior Developer",
     organization: "Development Monitors LLC",
     startDate: "April 2023",
     endDate: "November 2023",
-    role: "Remote",
     location: "Remote",
     responsibilities: [
       "Core Developer of a Diagnostic & Decision Support Plugin in QGIS for Water Supply System Utility",
@@ -27,11 +25,10 @@ const experiences: Experience[] = [
     ],
   },
   {
-    title: "Software Development Intern",
+    role: "Software Development Intern",
     organization: "Development Monitors LLC",
     startDate: "November 2022",
     endDate: "April 2023",
-    role: "Remote",
     location: "Remote",
     responsibilities: [
       "Core developer of a 3D Mapping Software in ThreeJS & Flask to mitigate various risks",
@@ -40,11 +37,10 @@ const experiences: Experience[] = [
     ],
   },
   {
-    title: "Web Development Intern",
+    role: "Web Development Intern",
     organization: "Beyond Exams",
     startDate: "July 2022",
     endDate: "November 2022",
-    role: "Remote",
     location: "Remote",
     responsibilities: [
       "Built a Web Application to translate Youtube Videos from one-to-many language",

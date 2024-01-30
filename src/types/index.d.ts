@@ -40,11 +40,10 @@ type Languages = {
 
 // Experience
 type Experience = {
-  title: string;
+  role: string;
   organization: string;
   startDate: string;
   endDate: string;
-  role: string;
   location: string;
   responsibilities: string[];
 };
