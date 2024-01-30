@@ -1,3 +1,5 @@
+import experience from "@/app/experience/page";
+
 // *Config*
 export type SiteConfig = {
   name: string;
@@ -34,6 +36,16 @@ type Languages = {
   text: string;
   hours: number;
   minutes: number;
+};
+
+// Experience
+type Experience = {
+  role: string;
+  organization: string;
+  startDate: string;
+  endDate: string;
+  location: string;
+  responsibilities: string[];
 };
 
 // Discord
