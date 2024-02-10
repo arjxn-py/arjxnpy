@@ -4,7 +4,7 @@ import { CarouselItem } from "@/components/ui/carousel";
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 
 interface ExperienceCardProps {
-  experience?: Experience; // Make sure to handle the case when experience is undefined
+  experience?: Experience;
 }
 
 export function ExperienceSkeleton() {

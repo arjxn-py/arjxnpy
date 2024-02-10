@@ -20,14 +20,12 @@ export default async function experience() {
         </HeadingText>
         <div className="flex flex-col items-end gap-4">
           <div className="grid w-full grid-cols-1">
-            <Carousel className="w-full">
+            <Carousel className="w-full" orientation="vertical">
               <CarouselContent>
                 {data.map((experience, index) => (
                   <ExperienceCard key={index} experience={experience} />
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
             </Carousel>
           </div>
         </div>
