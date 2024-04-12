@@ -36,13 +36,18 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="hover:underline">
-              <Link href="/dashboard" onClick={handleClick}>
-                Dashboard
+              <Link href="/experience" onClick={handleClick}>
+                Experience
               </Link>
             </li>
             <li className="hover:underline">
-              <Link href="/experience" onClick={handleClick}>
-                Experience
+              <Link href="/projects" onClick={handleClick}>
+                Projects
+              </Link>
+            </li>
+            <li className="hover:underline">
+              <Link href="/dashboard" onClick={handleClick}>
+                Dashboard
               </Link>
             </li>
           </ul>
