@@ -40,12 +40,16 @@ type Languages = {
 
 // Experience
 type Experience = {
-  role: string;
-  organization: string;
-  startDate: string;
-  endDate: string;
-  location: string;
-  responsibilities: string[];
+  organization: {
+    name: string;
+    link?: string | undefined;
+    location: string;
+  };
+  positions: {
+    role: string;
+    period: string;
+    responsibilities: string[];
+  }[];
 };
 
 // Discord
