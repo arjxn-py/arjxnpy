@@ -20,24 +20,25 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
                 {experience.organization.location}
               </CardDescription>
             </div>
-            <div className="flex justify-between pb-4">
-              <CardDescription className="line-clamp-2 text-sm font-light pl-4">
-                {experience.positions[0].role}
-              </CardDescription>
-              <CardDescription className="flex items-end gap-1 pr-4 pb-4 justify-end">
-                {experience.positions[0].period}
-              </CardDescription>
-            </div>
-            <ul className="list-disc text-sm font-light pl-8">
-              {experience.positions[0].responsibilities &&
-                experience.positions[0].responsibilities.map(
-                  (responsibility, index) => (
+            {experience.positions.map((position, index) => (
+              <div key={index}>
+                <div className="flex justify-between pb-4">
+                  <CardDescription className="line-clamp-2 text-sm font-light pl-4">
+                    {position.role}
+                  </CardDescription>
+                  <CardDescription className="flex items-end gap-1 pr-4 pb-4 justify-end">
+                    {position.period}
+                  </CardDescription>
+                </div>
+                <ul className="list-disc text-sm font-light pl-8">
+                  {position.responsibilities.map((responsibility, index) => (
                     <li key={index} className="mb-1 pb-2">
                       {responsibility}
                     </li>
-                  )
-                )}
-            </ul>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </Card>
         </div>
       </CarouselItem>
