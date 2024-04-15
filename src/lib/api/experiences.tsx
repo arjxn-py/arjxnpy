@@ -3,7 +3,7 @@ import { Experience } from "@/types";
 const experiences: Experience[] = [
   {
     organization: {
-      name: "PyBaMM (Python Battery Mathematical Modeling), NumFOCUS Remote",
+      name: "PyBaMM (Python Battery Mathematical Modeling), NumFOCUS",
       location: "Remote",
     },
     positions: [
@@ -41,7 +41,7 @@ const experiences: Experience[] = [
   },
   {
     organization: {
-      name: "Development Monitors LLC Remote",
+      name: "Development Monitors LLC",
       location: "Remote",
     },
     positions: [
@@ -81,7 +81,7 @@ const experiences: Experience[] = [
   },
   {
     organization: {
-      name: "Beyond Exams Remote",
+      name: "Beyond Exams",
       location: "Remote",
     },
     positions: [

@@ -22,17 +22,24 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
             </div>
             {experience.positions.map((position, index) => (
               <div key={index}>
-                <div className="flex justify-between pb-4">
+                <div className="flex justify-between">
                   <CardDescription className="line-clamp-2 text-sm font-light pl-4">
                     {position.role}
                   </CardDescription>
-                  <CardDescription className="flex items-end gap-1 pr-4 pb-4 justify-end">
+                  <CardDescription className="flex items-end gap-1 pr-4 justify-end">
                     {position.period}
                   </CardDescription>
                 </div>
                 <ul className="list-disc text-sm font-light pl-8">
                   {position.responsibilities.map((responsibility, index) => (
-                    <li key={index} className="mb-1 pb-2">
+                    <li
+                      key={index}
+                      className={`${
+                        index === position.responsibilities.length - 1
+                          ? "mb-1 pb-2"
+                          : ""
+                      }`}
+                    >
                       {responsibility}
                     </li>
                   ))}
