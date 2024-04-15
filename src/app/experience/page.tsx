@@ -2,12 +2,7 @@ import { HeadingText } from "@/components/common/heading-text";
 import ExperienceCard from "@/components/experience/experience-card";
 import experiences from "@/lib/api/experiences";
 import { Experience } from "@/types";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent } from "@/components/ui/carousel";
 
 export default async function experience() {
   const data = (await experiences) as Experience[];
