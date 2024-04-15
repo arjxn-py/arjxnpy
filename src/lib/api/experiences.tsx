@@ -1,4 +1,6 @@
-[
+import { Experience } from "@/types";
+
+const experiences: Experience[] = [
   {
     organization: {
       name: "PyBaMM (Python Battery Mathematical Modeling), NumFOCUS Remote",
@@ -96,3 +98,5 @@
     ],
   },
 ];
+
+export default experiences;
