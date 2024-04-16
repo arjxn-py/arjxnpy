@@ -3,6 +3,7 @@ import ExperienceCard from "@/components/experience/experience-card";
 import experiences from "@/lib/api/experiences";
 import { Experience } from "@/types";
 import { Carousel, CarouselContent } from "@/components/ui/carousel";
+import "./experience.css";
 
 export default async function experience() {
   const data = (await experiences) as Experience[];
@@ -16,7 +17,7 @@ export default async function experience() {
         <div className="flex flex-col items-end gap-4">
           <div className="grid w-full grid-cols-1">
             <Carousel className="w-full" orientation="vertical">
-              <CarouselContent className="max-h-[660px]">
+              <CarouselContent className="max-h-[435px] overflow-y-auto scrollbar">
                 {data.map((experience, index) => (
                   <ExperienceCard key={index} experience={experience} />
                 ))}
