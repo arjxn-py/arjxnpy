@@ -30,7 +30,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
                     {position.period}
                   </CardDescription>
                 </div>
-                <ul className="list-disc text-sm font-light pl-8">
+                <ul className="list-disc text-xs font-light pl-8">
                   {position.responsibilities.map((responsibility, index) => (
                     <li
                       key={index}
