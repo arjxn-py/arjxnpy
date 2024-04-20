@@ -7,9 +7,7 @@
   border-radius: 4px;
 }
 
-@media (min-width: 481px) {
-  .carousel-content {
-    max-height: 435px;
-    overflow-y: auto;
-  }
+.scroll-area {
+  max-height: 450px;
+  overflow-y: auto;
 }

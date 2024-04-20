@@ -2,7 +2,7 @@ import { HeadingText } from "@/components/common/heading-text";
 import ExperienceCard from "@/components/experience/experience-card";
 import experiences from "@/lib/api/experiences";
 import { Experience } from "@/types";
-import { Carousel, CarouselContent } from "@/components/ui/carousel";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import "./experience.css";
 
 export default async function experience() {
@@ -16,13 +16,11 @@ export default async function experience() {
         </HeadingText>
         <div className="flex flex-col items-end gap-4">
           <div className="grid w-full grid-cols-1">
-            <Carousel className="w-full" orientation="vertical">
-              <CarouselContent className="carousel-content scrollbar">
-                {data.map((experience, index) => (
-                  <ExperienceCard key={index} experience={experience} />
-                ))}
-              </CarouselContent>
-            </Carousel>
+            <ScrollArea className="scroll-area">
+              {data.map((experience, index) => (
+                <ExperienceCard key={index} experience={experience} />
+              ))}
+            </ScrollArea>
           </div>
         </div>
       </div>
