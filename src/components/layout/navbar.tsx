@@ -51,6 +51,11 @@ export default function Navbar() {
                 Dashboard
               </Link>
             </li>
+            <li className="hover:underline">
+              <Link href="/portfolio" onClick={handleClick}>
+                Portfolio
+              </Link>
+            </li>
           </ul>
           <ModeToggle />
         </div>
