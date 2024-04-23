@@ -50,7 +50,51 @@ export default function Portfolio() {
     console.log({ values });
 
     try {
-      const prompt = `Generate a summary and additional components for a professional portfolio based on the following information:\n\nName: ${values.name}\nEmail Address: ${values.emailAddress}\nEducation: ${values.education}\nUniversity/Institution: ${values.university}\nProfession/Job Title: ${values.profession}\nSkills: ${values.skills}\nWork Experience (in years): ${values.workExperience}\nInterests/Hobbies: ${values.interests}\n\n1. Please provide a brief bio or introduction for the portfolio.\n2. Design a section highlighting the educational background and institutions attended.\n3. Create a section showcasing the professional experience and job roles held.\n4. Develop a section focusing on the skills and competencies possessed.\n5. Include a section displaying any notable projects or work samples.\n6. Add a section showcasing the interests and hobbies of the individual.\n\nPlease ensure that all components are professionally presented and aligned with the person's background, qualifications, and career trajectory.`;
+      const prompt = `Generate a professional portfolio for ${values.name} in the following JSON format & just give the JSON code & nothing else:
+
+      {
+        "name": "${values.name}",
+        "introduction": "Please provide a brief bio or introduction for the portfolio.",
+        "education": {
+          "degree": "${values.education}",
+          "university": "${values.university}",
+          "graduationDate": "[Graduation Date]",
+          "coursework": "List any relevant coursework.",
+          "relevantProjects": "List any relevant projects undertaken during education."
+        },
+        "professionalExperience": {
+          "position": "${values.profession}",
+          "company": "Enter company name",
+          "employmentDates": "Enter employment dates",
+          "responsibilities": [
+            "List responsibilities and achievements in bullet points."
+          ]
+        },
+        "skills": [
+          "Programming languages:" "${values.skills}",
+          "Development frameworks:" "[List development frameworks]",
+          "DevOps tools:" "[List DevOps tools]",
+          "Agile methodologies:" "[List Agile methodologies]",
+          "Strong problem-solving and communication skills"
+        ],
+        "notableProjects": [
+          {
+            "name": "[Project Name]",
+            "description": "Description of the project"
+          }
+        ],
+        "interestsAndHobbies": [
+          {
+            "name": "${values.interests}",
+            "description": "Description of the interest/hobby"
+          }
+        ],
+        "additionalComponents": {
+          "certifications": "List any relevant certifications.",
+          "publications": "List any publications.",
+          "testimonials": "List any testimonials or endorsements."
+        }
+      }`;
 
       const response = await axios.post(
         "https://api.awanllm.com/v1/chat/completions",
@@ -67,7 +111,7 @@ export default function Portfolio() {
       );
 
       const generatedObject = response.data.choices[0].message.content;
-      console.log("Generated object:", generatedObject);
+      // console.log(JSON.parse(generatedObject));
     } catch (error) {
       console.error("Error generating object:", error);
     }
