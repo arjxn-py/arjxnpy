@@ -16,6 +16,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import PortfolioResultCard from "./PortfolioResultCard";
 
 const AWANLLM_API_KEY = process.env.NEXT_PUBLIC_AWANLLM_API_KEY;
 
@@ -50,8 +51,7 @@ export default function Portfolio() {
     console.log({ values });
 
     try {
-      const prompt = `Generate a professional portfolio for ${values.name} in the following JSON format & just give the JSON code & nothing else:
-
+      const prompt = `Generate a professional portfolio for ${values.name} in the specified JSON format & just give the JSON code & nothing else:
       {
         "name": "${values.name}",
         "introduction": "Please provide a brief bio or introduction for the portfolio.",
@@ -71,10 +71,10 @@ export default function Portfolio() {
           ]
         },
         "skills": [
-          "Programming languages:" "${values.skills}",
-          "Development frameworks:" "[List development frameworks]",
-          "DevOps tools:" "[List DevOps tools]",
-          "Agile methodologies:" "[List Agile methodologies]",
+          "Programming languages: ${values.skills}",
+          "Development frameworks: [List development frameworks]",
+          "DevOps tools: [List DevOps tools]",
+          "Agile methodologies: [List Agile methodologies]",
           "Strong problem-solving and communication skills"
         ],
         "notableProjects": [
@@ -110,8 +110,10 @@ export default function Portfolio() {
         }
       );
 
-      const generatedObject = response.data.choices[0].message.content;
-      // console.log(JSON.parse(generatedObject));
+      const generatedObject = JSON.parse(
+        response.data.choices[0].message.content
+      );
+      setGeneratedObject(generatedObject);
     } catch (error) {
       console.error("Error generating object:", error);
     }
@@ -226,6 +228,10 @@ export default function Portfolio() {
         />
         <Button type="submit">Submit</Button>
       </form>
+      {/* Render generated object */}
+      {generatedObject && (
+        <PortfolioResultCard generatedObject={generatedObject} />
+      )}
     </Form>
   );
 }
