@@ -12,7 +12,7 @@ const PortfolioResultCard = ({ generatedObject }) => {
     <Card className="max-w-3xl mx-auto p-6 bg-white shadow-lg">
       <CardHeader className="border-b-2 border-gray-200 pb-4 pt-4 mb-4">
         <CardTitle className="text-2xl font-bold text-center">
-          {generatedObject.name}'s Portfolio
+          {generatedObject.name}&apos;s Portfolio
         </CardTitle>
       </CardHeader>
       <CardContent>
