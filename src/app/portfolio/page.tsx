@@ -48,7 +48,7 @@ export default function Portfolio() {
     },
   });
 
-  const handleSubmit = async (values) => {
+  const handleSubmit = async (values: z.infer<typeof formSchema>) => {
     console.log({ values });
 
     try {
