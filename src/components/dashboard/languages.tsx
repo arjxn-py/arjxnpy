@@ -31,7 +31,7 @@ export function Languages({ languages }: LanguagesProps) {
       <CardHeader>
         <CardTitle className="text-lg">Top Languages</CardTitle>
       </CardHeader>
-      <CardContent className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-0">
+      <CardContent className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-0 max-h-[292px]">
         <ResponsiveContainer width="100%" height={250}>
           <PieChart>
             <Pie
