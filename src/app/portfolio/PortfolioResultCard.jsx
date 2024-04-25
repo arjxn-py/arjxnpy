@@ -9,9 +9,9 @@ import {
 
 const PortfolioResultCard = ({ generatedObject }) => {
   return (
-    <Card className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+    <Card className="max-w-3xl mx-auto p-6 bg-white shadow-lg">
       <CardHeader className="border-b-2 border-gray-200 pb-4 pt-4 mb-4">
-        <CardTitle className="text-2xl font-bold">
+        <CardTitle className="text-2xl font-bold text-center">
           {generatedObject.name}'s Portfolio
         </CardTitle>
       </CardHeader>
@@ -25,11 +25,26 @@ const PortfolioResultCard = ({ generatedObject }) => {
         {/* Education */}
         <CardDescription className="mb-6">
           <h3 className="text-lg font-semibold pb-2 pt-4">Education</h3>
-          <p>Degree: {generatedObject.education.degree}</p>
-          <p>University: {generatedObject.education.university}</p>
-          <p>Graduation Date: {generatedObject.education.graduationDate}</p>
-          <p>Coursework: {generatedObject.education.coursework}</p>
-          <p>Relevant Projects: {generatedObject.education.relevantProjects}</p>
+          <p>
+            <span className="font-semibold">Degree:</span>{" "}
+            {generatedObject.education.degree}
+          </p>
+          <p>
+            <span className="font-semibold">University:</span>{" "}
+            {generatedObject.education.university}
+          </p>
+          <p>
+            <span className="font-semibold">Graduation Date:</span>{" "}
+            {generatedObject.education.graduationDate}
+          </p>
+          <p>
+            <span className="font-semibold">Coursework:</span>{" "}
+            {generatedObject.education.coursework}
+          </p>
+          <p>
+            <span className="font-semibold">Relevant Projects:</span>{" "}
+            {generatedObject.education.relevantProjects}
+          </p>
         </CardDescription>
 
         {/* Professional Experience */}
@@ -37,16 +52,37 @@ const PortfolioResultCard = ({ generatedObject }) => {
           <h3 className="text-lg font-semibold pb-2 pt-4">
             Professional Experience
           </h3>
-          <p>Position: {generatedObject.professionalExperience.position}</p>
-          <p>Company: {generatedObject.professionalExperience.company}</p>
           <p>
-            Employment Dates:{" "}
+            <span className="font-semibold">Position:</span>{" "}
+            {generatedObject.professionalExperience.position}
+          </p>
+          <p>
+            <span className="font-semibold">Company:</span>{" "}
+            {generatedObject.professionalExperience.company}
+          </p>
+          <p>
+            <span className="font-semibold">Employment Dates:</span>{" "}
             {generatedObject.professionalExperience.employmentDates}
           </p>
-          <p>
-            Responsibilities:{" "}
-            {generatedObject.professionalExperience.responsibilities.join(", ")}
-          </p>
+          <ul className="list-disc text-xs font-light pl-8">
+            {generatedObject.professionalExperience.responsibilities.map(
+              (responsibility, index) => (
+                <li
+                  key={index}
+                  className={`${
+                    index ===
+                    generatedObject.professionalExperience.responsibilities
+                      .length -
+                      1
+                      ? "mb-1 pb-2"
+                      : ""
+                  }`}
+                >
+                  {responsibility}
+                </li>
+              )
+            )}
+          </ul>
         </CardDescription>
 
         {/* Skills */}
@@ -87,14 +123,16 @@ const PortfolioResultCard = ({ generatedObject }) => {
             Additional Components
           </h3>
           <p>
-            Certifications:{" "}
+            <span className="font-semibold">Certifications:</span>{" "}
             {generatedObject.additionalComponents.certifications}
           </p>
           <p>
-            Publications: {generatedObject.additionalComponents.publications}
+            <span className="font-semibold">Publications:</span>{" "}
+            {generatedObject.additionalComponents.publications}
           </p>
           <p>
-            Testimonials: {generatedObject.additionalComponents.testimonials}
+            <span className="font-semibold">Testimonials:</span>{" "}
+            {generatedObject.additionalComponents.testimonials}
           </p>
         </CardDescription>
       </CardContent>
