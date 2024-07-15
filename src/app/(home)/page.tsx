@@ -48,69 +48,79 @@ export default async function Home() {
         <div className="grid grid-cols-3 gap-4 text-xs font-light">
           <ul className="list-disc pl-6">
             <li>
-              <span className="font-semibold">Python</span>
+              <span className="">Python</span>
             </li>
             <li>
-              <span className="font-semibold">JavaScript/TypeScript</span>
+              <span className="">JavaScript/TypeScript</span>
             </li>
             <li>
-              <span className="font-semibold">MERN</span>
+              <span className="">MERN</span>
             </li>
           </ul>
           <ul className="list-disc pl-6">
             <li>
-              <span className="font-semibold">Three.js</span>
+              <span className="">Three.js</span>
             </li>
             <li>
-              <span className="font-semibold">Docker</span>
+              <span className="">Docker</span>
             </li>
             <li>
-              <span className="font-semibold">Kubernetes</span>
+              <span className="">Kubernetes</span>
             </li>
           </ul>
           <ul className="list-disc pl-6">
             <li>
-              <span className="font-semibold">AWS</span>
+              <span className="">AWS</span>
             </li>
             <li>
-              <span className="font-semibold">CI/CD</span>
+              <span className="">CI/CD</span>
             </li>
-            <li>and more</li>
+            <li>and more...</li>
           </ul>
         </div>
         <p className="text-xs font-light">
           I consider myself very adaptive with new technologies and have good
           experience working with:
         </p>
-        <div className="grid grid-cols-3 gap-4 text-xs font-light">
+        <div className="grid grid-cols-2 gap-4 text-xs font-light">
           <ul className="list-disc pl-6">
             <li>
-              <span className="font-semibold">LLM Integrations</span>
+              <span className="">LLM Integrations</span>
             </li>
             <li>
-              <span className="font-semibold">3D modeling using Three.js</span>
+              <span className="">3D modeling using Three.js</span>
+            </li>
+            <li>
+              <span className="">Hosting on Cloud Platforms</span>
             </li>
           </ul>
           <ul className="list-disc pl-6">
             <li>
-              <span className="font-semibold">QGIS Plugin Development</span>
+              <span className="">QGIS Plugin Development</span>
             </li>
             <li>
-              <span className="font-semibold">Containerization</span>
+              <span className="">Containerization</span>
             </li>
-          </ul>
-          <ul className="list-disc pl-6">
             <li>
-              <span className="font-semibold">Hosting on Cloud Platforms</span>
+              <span className="">Python Packaging</span>
             </li>
           </ul>
         </div>
-        <p className="text-xs font-light">
-          I am currently exploring{" "}
-          <span className="font-semibold">
-            Retrieval Augmented Generation frameworks
-          </span>{" "}
-          and <span className="font-semibold">Infrastructure as Code</span>.
+        <p className="text-xs font-light">I am currently exploring:</p>
+        <div className="grid grid-cols-2 gap-4 text-xs font-light">
+          <ul className="list-disc pl-6">
+            <li>
+              <span className="">Retrieval Augmented Generation</span>
+            </li>
+          </ul>
+          <ul className="list-disc pl-6">
+            <li>
+              <span className="">Infrastructure as Code</span>
+            </li>
+          </ul>
+        </div>
+        <p className="text-xs font-light text-muted-foreground">
+          Above lists are by no means exhaustive.
         </p>
         <SocialMediaIcons />
       </section>
