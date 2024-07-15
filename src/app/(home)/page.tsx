@@ -43,26 +43,68 @@ export default async function Home() {
           I possess a strong background in{" "}
           <span className="font-semibold">Full Stack Software Engineering</span>{" "}
           and <span className="font-semibold">DevOps</span>. My expertise lies
-          in <span className="font-semibold">Python</span>,{" "}
-          <span className="font-semibold">JavaScript/TypeScript</span>,{" "}
-          <span className="font-semibold">MERN</span>,{" "}
-          <span className="font-semibold">Three.js</span>,{" "}
-          <span className="font-semibold">Docker</span>,{" "}
-          <span className="font-semibold">Kubernetes</span>,{" "}
-          <span className="font-semibold">AWS</span>,{" "}
-          <span className="font-semibold">CI/CD</span>, and more.
+          in:
         </p>
+        <div className="grid grid-cols-2 gap-4 text-sm font-light">
+          <ul className="list-disc pl-6">
+            <li>
+              <span className="font-semibold">Python</span>
+            </li>
+            <li>
+              <span className="font-semibold">JavaScript/TypeScript</span>
+            </li>
+            <li>
+              <span className="font-semibold">MERN</span>
+            </li>
+            <li>
+              <span className="font-semibold">Three.js</span>
+            </li>
+          </ul>
+          <ul className="list-disc pl-6">
+            <li>
+              <span className="font-semibold">Docker</span>
+            </li>
+            <li>
+              <span className="font-semibold">Kubernetes</span>
+            </li>
+            <li>
+              <span className="font-semibold">AWS</span>
+            </li>
+            <li>
+              <span className="font-semibold">CI/CD</span>
+            </li>
+            <li>and more</li>
+          </ul>
+        </div>
         <p className="text-sm font-light">
           I consider myself very adaptive with new technologies and have good
-          experience working with{" "}
-          <span className="font-semibold">LLM Integrations</span>,{" "}
-          <span className="font-semibold">3D modeling using Three.js</span>,{" "}
-          <span className="font-semibold">QGIS Plugin Development</span>,{" "}
-          <span className="font-semibold">Containerization</span>, and{" "}
-          <span className="font-semibold">Hosting on Cloud Platforms</span>. I
-          am currently exploring{" "}
+          experience working with:
+        </p>
+        <div className="grid grid-cols-2 gap-4 text-sm font-light">
+          <ul className="list-disc pl-6">
+            <li>
+              <span className="font-semibold">LLM Integrations</span>
+            </li>
+            <li>
+              <span className="font-semibold">3D modeling using Three.js</span>
+            </li>
+            <li>
+              <span className="font-semibold">QGIS Plugin Development</span>
+            </li>
+          </ul>
+          <ul className="list-disc pl-6">
+            <li>
+              <span className="font-semibold">Containerization</span>
+            </li>
+            <li>
+              <span className="font-semibold">Hosting on Cloud Platforms</span>
+            </li>
+          </ul>
+        </div>
+        <p className="text-sm font-light">
+          I am currently exploring{" "}
           <span className="font-semibold">
-            Retrieval Augmentation Generation frameworks
+            Retrieval Augmented Generation frameworks
           </span>{" "}
           and <span className="font-semibold">Infrastructure as Code</span>.
         </p>
