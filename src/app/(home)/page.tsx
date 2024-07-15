@@ -3,11 +3,11 @@ import { SocialMediaIcons } from "@/components/common/social-media-icons";
 export default async function Home() {
   return (
     <main className="py-4">
-      <section className="space-y-4 py-4">
-        <p className="text-sm font-light text-muted-foreground">
+      <section className="text-xs space-y-4 py-4">
+        {/* <p className="text-xs font-light text-muted-foreground">
           Welcome to /arjxn-py
-        </p>
-        <p className="text-sm font-light">
+        </p> */}
+        <p className="text-xs font-light">
           Arjun Verma is a senior undergrad at the University of Delhi, India,
           pursuing his Bachelors of Technology degree with a major in
           <span className="font-semibold">
@@ -17,7 +17,7 @@ export default async function Home() {
           with a minor in
           <span className="font-semibold"> Management</span>.
         </p>
-        <p className="text-sm font-light">
+        <p className="text-xs font-light">
           I am very passionate about{" "}
           <span className="font-semibold">open source</span> and{" "}
           <span className="font-semibold">open science</span>. Currently, I am
@@ -31,7 +31,7 @@ export default async function Home() {
           <span className="font-semibold">Google Summer of Code developer</span>{" "}
           at <span className="font-semibold">PyBaMM</span>.
         </p>
-        <p className="text-sm font-light">
+        <p className="text-xs font-light">
           In addition to my work with PyBaMM, I have also worked as a{" "}
           <span className="font-semibold">Remote Software Engineer</span> at{" "}
           <span className="font-semibold">Development Monitors LLC</span>,
@@ -39,13 +39,13 @@ export default async function Home() {
           several{" "}
           <span className="font-semibold">World Bank funded projects</span>.
         </p>
-        <p className="text-sm font-light">
+        <p className="text-xs font-light">
           I possess a strong background in{" "}
           <span className="font-semibold">Full Stack Software Engineering</span>{" "}
           and <span className="font-semibold">DevOps</span>. My expertise lies
           in:
         </p>
-        <div className="grid grid-cols-2 gap-4 text-sm font-light">
+        <div className="grid grid-cols-3 gap-4 text-xs font-light">
           <ul className="list-disc pl-6">
             <li>
               <span className="font-semibold">Python</span>
@@ -56,17 +56,19 @@ export default async function Home() {
             <li>
               <span className="font-semibold">MERN</span>
             </li>
+          </ul>
+          <ul className="list-disc pl-6">
             <li>
               <span className="font-semibold">Three.js</span>
             </li>
-          </ul>
-          <ul className="list-disc pl-6">
             <li>
               <span className="font-semibold">Docker</span>
             </li>
             <li>
               <span className="font-semibold">Kubernetes</span>
             </li>
+          </ul>
+          <ul className="list-disc pl-6">
             <li>
               <span className="font-semibold">AWS</span>
             </li>
@@ -76,11 +78,11 @@ export default async function Home() {
             <li>and more</li>
           </ul>
         </div>
-        <p className="text-sm font-light">
+        <p className="text-xs font-light">
           I consider myself very adaptive with new technologies and have good
           experience working with:
         </p>
-        <div className="grid grid-cols-2 gap-4 text-sm font-light">
+        <div className="grid grid-cols-3 gap-4 text-xs font-light">
           <ul className="list-disc pl-6">
             <li>
               <span className="font-semibold">LLM Integrations</span>
@@ -88,20 +90,22 @@ export default async function Home() {
             <li>
               <span className="font-semibold">3D modeling using Three.js</span>
             </li>
-            <li>
-              <span className="font-semibold">QGIS Plugin Development</span>
-            </li>
           </ul>
           <ul className="list-disc pl-6">
             <li>
+              <span className="font-semibold">QGIS Plugin Development</span>
+            </li>
+            <li>
               <span className="font-semibold">Containerization</span>
             </li>
+          </ul>
+          <ul className="list-disc pl-6">
             <li>
               <span className="font-semibold">Hosting on Cloud Platforms</span>
             </li>
           </ul>
         </div>
-        <p className="text-sm font-light">
+        <p className="text-xs font-light">
           I am currently exploring{" "}
           <span className="font-semibold">
             Retrieval Augmented Generation frameworks
