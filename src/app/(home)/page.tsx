@@ -35,8 +35,8 @@ export default async function Home() {
           In addition to my work with PyBaMM, I have also worked as a{" "}
           <span className="font-semibold">Remote Software Engineer</span> at{" "}
           <span className="font-semibold">Development Monitors LLC</span>,
-          Arlington, Virginia. There, I was one of the four developers on
-          several{" "}
+          Arlington, Virginia. There, I was one of the core developers on
+          a couple of{" "}
           <span className="font-semibold">World Bank funded projects</span>.
         </p>
         <p className="text-xs font-light">
@@ -56,6 +56,7 @@ export default async function Home() {
             <li>
               <span className="">MERN</span>
             </li>
+            <li>and more...</li>
           </ul>
           <ul className="list-disc pl-6">
             <li>
@@ -75,7 +76,9 @@ export default async function Home() {
             <li>
               <span className="">CI/CD</span>
             </li>
-            <li>and more...</li>
+            <li>
+              <span className="">SQL/PostgreSQL</span>/span>
+            </li>
           </ul>
         </div>
         <p className="text-xs font-light">
