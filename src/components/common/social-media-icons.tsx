@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 import { siteConfig } from "@/config/site";
 
@@ -21,7 +21,7 @@ export function SocialMediaIcons() {
         aria-label="Twitter"
         className="rounded p-2 text-xl hover:bg-accent hover:text-accent-foreground"
       >
-        <FaTwitter />
+        <FaXTwitter />
       </a>
       <a
         target="_blank"
