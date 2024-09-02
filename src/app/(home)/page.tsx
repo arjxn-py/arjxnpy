@@ -51,7 +51,7 @@ export default async function Home() {
               <span className="">Python</span>
             </li>
             <li>
-              <span className="">JavaScript/TypeScript</span>
+              <span className="">JS/TS</span>
             </li>
             <li>
               <span className="">MERN</span>
@@ -77,7 +77,7 @@ export default async function Home() {
               <span className="">CI/CD</span>
             </li>
             <li>
-              <span className="">SQL/PostgreSQL</span>/span>
+              <span className="">SQL/PostgreSQL</span>
             </li>
           </ul>
         </div>
